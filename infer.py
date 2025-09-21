@@ -236,3 +236,4 @@ def recommend_for_query(user_id: str, query: str, top_k: int = 5):
     return llm.invoke(final_prompt.format_messages(q=query, items=str(enriched))).content
 
 print(recommend_for_query("U100", "I want to buy gift for fathers day", top_k=5))
+ 
